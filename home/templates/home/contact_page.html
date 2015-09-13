@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <h1>{{ self.title }}</h1>
+    {{ self.intro|richtext }}
+    <form action="{% pageurl self %}" method="POST">
+        {% csrf_token %}
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="addresse" name="deine-adresse"/>
+            <label class="mdl-textfield__label" for="addresse">Ihre Adresse</label>
+        </div>
+        <br/>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" name="nachricht"></textarea>
+            <label class="mdl-textfield__label" for="message">Ihre Nachricht ...</label>
+        </div>
+
+        <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+    </form>
+{% endblock %}
