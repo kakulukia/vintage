@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% load vintage_tags wagtailcore_tags %}
+{% get_site_root as site_root %}
 
-</body>
-</html>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--tabs">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="{% pageurl site_root %}" class="mdl-layout__tab {% if calling_page.url == menuitem.url %}is-active{% endif %}">{{ site_root.title }}</a>
+            {% for menuitem in menuitems %}
+                <a href="{% pageurl menuitem %}" class="mdl-layout__tab {% if calling_page.url == menuitem.url %}is-active{% endif %}">{{ menuitem.title }}</a>
+            {% endfor %}
+        </div>
+    </header>
+</div>
