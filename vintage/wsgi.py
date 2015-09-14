@@ -21,6 +21,6 @@ site.addsitedir('~/.virtualenvs/vintage/local/lib/python2.7/site-packages')
 sys.path.append('~/www/vintage')
 sys.path.append('~/www/vintage/vintage')
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "vintage.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
 application = get_wsgi_application()
