@@ -23,4 +23,8 @@ sys.path.append('/home/andy/www/vintage/vintage')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
+# Activate your virtual env
+activate_env = "/home/andy/.virtualenvs/vintage/bin/activate_this.py"
+execfile(activate_env, dict(__file__=activate_env))
+
 application = get_wsgi_application()
