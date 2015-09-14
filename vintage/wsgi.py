@@ -20,6 +20,7 @@ site.addsitedir('/home/andy/.virtualenvs/vintage/local/lib/python2.7/site-packag
 # Add the app's directory to the PYTHONPATH
 sys.path.append('/home/andy/www/vintage')
 sys.path.append('/home/andy/www/vintage/vintage')
+sys.path.append('/home/andy/.virtualenvs/vintage/local/lib/python2.7/site-packages')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
