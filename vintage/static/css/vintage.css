@@ -8,14 +8,12 @@ header.vintage {
     color: white; }
 
 .mdl-mega-footer {
-  padding: 2px 40px; }
+  padding: 2px 40px;
+  margin-top: 3em; }
 
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
   background: #267c7c;
   height: 4px; }
-
-h1, h2, h3, h4, h5 {
-  color: #267c7c; }
 
 body, html {
   min-height: 100%; }
@@ -24,5 +22,8 @@ body, html {
   width: 560px; }
   .mdl-textfield textarea {
     height: 150px; }
+
+.mdl-layout__tab {
+  text-transform: none; }
 
 /*# sourceMappingURL=vintage.css.map */
