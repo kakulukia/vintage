@@ -3,6 +3,8 @@
 
 {% block content %}
 
+    <audio src="/media/swing.mp3" controls id="song"></audio>
+
     <article>
         {% for block in self.body %}
             {% if block.block_type == 'heading' %}
@@ -14,5 +16,12 @@
             {% endif %}
         {% endfor %}
     </article>
+
+<script>
+    setTimeout(function(){ $("#song")[0].play(); }, 1000);
+//    $(document).ready(function() {
+//
+//    });
+</script>
 
 {% endblock %}
