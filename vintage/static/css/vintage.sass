@@ -9,7 +9,18 @@ footer
     text-decoration: none
 
 header.vintage
-  background-color: #ce4040
+  position: relative
+  background-color: transparent
+  &::after
+    content: ""
+    background-color: #ce4040
+    opacity: 0.7
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: absolute
+    z-index: -1
   h3
     color: white
 
@@ -22,15 +33,17 @@ header.vintage
     background: #267c7c
     height: 4px
 
-//h1, h2, h3, h4, h5, .mdl-layout__tab
-//  color: #267c7c
+header h3
+  margin-left: -20px
+  margin-top: 50px
+  font-size: 54px
 
-//h1, h2, h3, h4, h5, .mdl-layout__tab
-  //font-family: "Tangerine"
-  //font-family: 'Pinyon Script', cursive
-  //font-family: 'Miss Fajardose', cursive
+h1, h2, h3
+  font-family: "Tangerine"
+  color: #267c7c
 
-
+img
+  border: #267c7c 3px dashed
 
 body, html
   min-height: 100%
@@ -43,3 +56,31 @@ body, html
 .mdl-layout__tab
   text-transform: none
   //font-size: 24px
+
+.mdl-demo main .mdl-layout__tab-panel:not(#overview)
+  position: relative
+  background-color: transparent
+
+  audio
+    position: absolute
+    top: 0
+    right: 0
+    opacity: 0.3
+
+body::after
+  content: ""
+  background: url("/media/wallpaper.jpg")
+  opacity: 0.2
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  position: absolute
+  z-index: -1
+
+.furniture
+  margin-top: 2em
+  img
+    float: left
+    margin-right: 2em
+  clear: both

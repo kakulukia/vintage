@@ -1,7 +1,8 @@
 {% load wagtailcore_tags wagtailimages_tags vintage_tags %}
 
 <section class="furniture">
-    {% image self.image width-600 %}
+    {% image self.image width-500 %}
     <h4>{{ self.name }}</h4>
     {{ self.bound_blocks.description.render }}
+    <div style="clear: both"></div>
 </section>
