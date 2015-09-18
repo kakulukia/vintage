@@ -6,7 +6,7 @@ It exposes the WSGI callable as a module-level variable named ``application``.
 For more information on this file, see
 https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
-
+from __future__ import unicode_literals, absolute_import
 import sys
 import os
 import site
@@ -22,7 +22,7 @@ sys.path.append('/home/andy/www/vintage')
 sys.path.append('/home/andy/www/vintage/vintage')
 sys.path.append('/home/andy/.virtualenvs/vintage/local/lib/python2.7/site-packages')
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.production")
 
 # Activate your virtual env
 activate_env = "/home/andy/.virtualenvs/vintage/bin/activate_this.py"

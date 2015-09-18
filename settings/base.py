@@ -16,6 +16,10 @@ import os
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
+ADMINS = (
+    ('Andy', 'andy@frielandkiwis.de'),
+)
+WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'wagtail@vintage-moebel-berlin.de'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
