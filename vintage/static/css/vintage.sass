@@ -24,10 +24,6 @@ header.vintage
   h3
     color: white
 
-.mdl-mega-footer
-  padding: 2px 40px
-  margin-top: 3em
-
 .mdl-layout.is-upgraded
   .mdl-layout__tab.is-active::after
     background: #267c7c
@@ -84,3 +80,14 @@ body::after
     float: left
     margin-right: 2em
   clear: both
+
+.mdl-layout
+  display: flex /* or inline-flex */
+
+  footer
+    align-self: flex-end
+    width: 98%
+    text-align: center
+    padding: 2px 1%
+    margin-top: 3em
+    opacity: 0.8
