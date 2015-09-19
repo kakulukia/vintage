@@ -124,3 +124,9 @@ MEDIA_URL = '/media/'
 
 # Wagtail settings
 WAGTAIL_SITE_NAME = "vintage"
+
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': 'wagtail.wagtailsearch.backends.db.DBSearch',
+    }
+}
