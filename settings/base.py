@@ -17,7 +17,7 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 ADMINS = (
-    ('Andy', 'andy@frielandkiwis.de'),
+    ('Andy', 'andy@freilandkiwis.de'),
 )
 WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'wagtail@vintage-moebel-berlin.de'
 
