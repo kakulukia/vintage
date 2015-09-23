@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'taggit',
     'compressor',
     'modelcluster',
+    'django_extensions',
 
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
@@ -88,6 +89,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'debug': False,
         },
     },
 ]

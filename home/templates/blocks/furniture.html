@@ -1,8 +1,20 @@
 {% load wagtailcore_tags wagtailimages_tags vintage_tags %}
 
 <section class="furniture">
-    {% image self.image width-500 %}
+    <div class="furniture-img">
+        {% image self.image max-500x500 %}
+        <div style="clear: both"></div>
+        {% if self.price %}
+            <div class="price-container">
+                <div class="price_tag">
+                    <i class="fa fa-tag"></i>
+                    <span>{{ self.price }}</span>
+                </div>
+            </div>
+        {% endif %}
+    </div>
     <h4>{{ self.name }}</h4>
     {{ self.bound_blocks.description.render }}
+
     <div style="clear: both"></div>
 </section>

@@ -1,3 +1,5 @@
+$green: #267c7c
+
 footer
   //position: absolute
   //width: 100%
@@ -36,10 +38,10 @@ header h3
 
 h1, h2, h3
   font-family: "Tangerine"
-  color: #267c7c
+  color: $green
 
 img
-  border: #267c7c 3px dashed
+  border: black 7px solid
 
 body, html
   min-height: 100%
@@ -74,12 +76,18 @@ body::after
   position: absolute
   z-index: -1
 
-.furniture
-  margin-top: 2em
+.block-furniture
+  margin-top: 7em
+  &:first-child
+    margin-top: 3em
   img
     float: left
     margin-right: 2em
   clear: both
+
+.block-furniture:nth-child(even)
+  .furniture-img
+    float: right
 
 .mdl-layout
   display: flex /* or inline-flex */
@@ -91,3 +99,40 @@ body::after
     padding: 2px 1%
     margin-top: 3em
     opacity: 0.8
+
+.furniture-img
+  position: relative
+  float: left
+
+  .price-container
+    position: absolute
+    bottom: -40px
+    right: -25px
+
+  .price_tag
+    position: relative
+    width: 100px
+    height: 100px
+    float: right
+    i
+      position: absolute
+      top: 0
+      left: 0
+      font-size: 117px
+      color: #ffdd73
+    span
+      font-size: 17px
+      text-align: right
+      color: $green
+      position: absolute
+      display: inline-block
+      //bottom: 28px
+      //right: 13px
+      width: 90px
+      //height: 100px
+      transform: rotate(45deg) translateX(10px) translateY(2px)
+      transform-origin: bottom left
+
+.home
+  img
+    float: right

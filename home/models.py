@@ -10,6 +10,7 @@ from wagtail.wagtailimages.blocks import ImageChooserBlock
 
 
 class HomePage(Page):
+
     body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
@@ -29,6 +30,7 @@ class FurnitureBlock(blocks.StructBlock):
     name = blocks.CharBlock(required=True)
     description = blocks.RichTextBlock()
     image = ImageChooserBlock()
+    price = blocks.CharBlock(required=False)
 
     class Meta:
         icon = 'code'
