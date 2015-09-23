@@ -116,6 +116,7 @@ body::after {
       transform-origin: bottom left; }
 
 .home img {
-  float: right; }
+  float: right;
+  margin-left: 1em; }
 
 /*# sourceMappingURL=vintage.css.map */
