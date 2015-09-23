@@ -24,6 +24,7 @@ header.vintage
     position: absolute
     z-index: -1
   h3
+    font-family: "Tangerine"
     color: white
 
 .mdl-layout.is-upgraded
@@ -34,7 +35,7 @@ header.vintage
 header h3
   margin-left: -20px
   margin-top: 50px
-  font-size: 54px
+  font-size: 54px !important
 
 h1, h2, h3
   font-family: "Tangerine"
@@ -97,7 +98,6 @@ body::after
     width: 98%
     text-align: center
     padding: 2px 1%
-    margin-top: 3em
     opacity: 0.8
 
 .furniture-img
@@ -137,3 +137,22 @@ body::after
   img
     float: right
     margin-left: 1em
+
+p, li, div, .mdl-mega-footer--link-list li
+  font-size: 18px
+
+a
+  color: $green
+
+html body, h3, h4
+  font-family: 'Poiret One', cursive
+  font-weight: bold
+
+.mdl-layout__tab
+  font-size: 18px
+
+img
+  &.right
+    float: right
+  &.left
+    float: left
