@@ -24,7 +24,8 @@ WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'wagtail@vintage-moebel-berlin.de'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 ALLOWED_HOSTS = [
-    '.vintage-moebel-berlin.de'
+    '.vintage-moebel-berlin.de',
+    'localhost',
 ]
 
 # Application definition
