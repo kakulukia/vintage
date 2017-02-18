@@ -6,8 +6,9 @@
     {{ self.intro|richtext }}
     <form action="{% pageurl self %}" method="POST">
         {% csrf_token %}
+
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="addresse" name="deine-adresse"/>
+            <input class="mdl-textfield__input" type="text" id="addresse" name="ihre-adresse"/>
             <label class="mdl-textfield__label" for="addresse">Ihre Adresse</label>
         </div>
         <br/>
